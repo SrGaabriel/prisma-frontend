@@ -1,0 +1,80 @@
+.page {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 1300px;
+    height: 85%;
+}
+
+.month {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    background-color: #f7f5fce1;
+    border-radius: 10px;
+    padding: 32px;
+}
+
+.monthName {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 16px;    
+}
+
+.monthCalendarSection {
+    display: flex;
+    width: 100%;
+    height: 275px;
+}
+
+.weekDayColumn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.weekDayName {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.weekDayNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.weekDayNumber:hover {
+    background-color: var(--primary-50);
+}
+
+.dayDisabled {
+    color: gray;
+    cursor: default;
+}
+
+.dayDisabled:hover {
+    background-color: transparent;
+}
+
+.dayToday {
+    background-color: var(--primary-300);
+}
+
+.dayToday:hover {
+    background-color: var(--primary-300);
+}

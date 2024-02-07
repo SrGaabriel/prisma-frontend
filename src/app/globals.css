@@ -1,75 +1,141 @@
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #0c091e;
+    --background: #f7f5fc;
+    --primary: #523ec5;
+    --secondary: #9bb5da;
+    --accent: #ff7700;
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --text-50: #e9f4fb;
+    --text-100: #d3e9f8;
+    --text-200: #a7d2f1;
+    --text-300: #7bbcea;
+    --text-400: #50a5e2;
+    --text-500: #248fdb;
+    --text-600: #1d72af;
+    --text-700: #155684;
+    --text-800: #0e3958;
+    --text-900: #071d2c;
+    --text-950: #040e16;
 
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+    --background-50: #e7f2fd;
+    --background-100: #d0e5fb;
+    --background-200: #a0ccf8;
+    --background-300: #71b2f4;
+    --background-400: #4199f1;
+    --background-500: #127fed;
+    --background-600: #0e66be;
+    --background-700: #0b4c8e;
+    --background-800: #07335f;
+    --background-900: #04192f;
+    --background-950: #020d18;
 
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
+    --primary-50: #edebf9;
+    --primary-100: #dcd8f3;
+    --primary-200: #b9b0e8;
+    --primary-300: #9689dc;
+    --primary-400: #7262d0;
+    --primary-500: #4f3bc4;
+    --primary-600: #3f2f9d;
+    --primary-700: #302376;
+    --primary-800: #20174f;
+    --primary-900: #100c27;
+    --primary-950: #080614;
 
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+    --secondary-50: #ecf1f8;
+    --secondary-100: #dae4f1;
+    --secondary-200: #b5c8e3;
+    --secondary-300: #8fadd6;
+    --secondary-400: #6a91c8;
+    --secondary-500: #4576ba;
+    --secondary-600: #375e95;
+    --secondary-700: #294770;
+    --secondary-800: #1c2f4a;
+    --secondary-900: #0e1825;
+    --secondary-950: #070c13;
+
+    --accent-50: #fff1e5;
+    --accent-100: #ffe4cc;
+    --accent-200: #ffc999;
+    --accent-300: #ffad66;
+    --accent-400: #ff9233;
+    --accent-500: #ff7700;
+    --accent-600: #cc5f00;
+    --accent-700: #994700;
+    --accent-800: #663000;
+    --accent-900: #331800;
+    --accent-950: #1a0c00;
+
+  }
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --text: #e3e0f6;
+    --background: #06040c;
+    --primary: #4e39c0;
+    --secondary: #254065;
+    --accent: #ff7700;
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
+    --text-50: #040e16;
+    --text-100: #071d2c;
+    --text-200: #0e3958;
+    --text-300: #155684;
+    --text-400: #1d72af;
+    --text-500: #248fdb;
+    --text-600: #50a5e2;
+    --text-700: #7bbcea;
+    --text-800: #a7d2f1;
+    --text-900: #d3e9f8;
+    --text-950: #e9f4fb;
 
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
+    --background-50: #020d18;
+    --background-100: #031b30;
+    --background-200: #07365f;
+    --background-300: #0a518f;
+    --background-400: #0d6cbf;
+    --background-500: #1187ee;
+    --background-600: #409ff2;
+    --background-700: #70b7f5;
+    --background-800: #a0cff8;
+    --background-900: #cfe7fc;
+    --background-950: #e7f3fd;
 
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
+    --primary-50: #080614;
+    --primary-100: #100c27;
+    --primary-200: #20174f;
+    --primary-300: #302376;
+    --primary-400: #3f2f9d;
+    --primary-500: #4f3bc4;
+    --primary-600: #7262d0;
+    --primary-700: #9689dc;
+    --primary-800: #b9b0e8;
+    --primary-900: #dcd8f3;
+    --primary-950: #edebf9;
+
+    --secondary-50: #070c13;
+    --secondary-100: #0e1825;
+    --secondary-200: #1c2f4a;
+    --secondary-300: #294770;
+    --secondary-400: #375e95;
+    --secondary-500: #4576ba;
+    --secondary-600: #6a91c8;
+    --secondary-700: #8fadd6;
+    --secondary-800: #b5c8e3;
+    --secondary-900: #dae4f1;
+    --secondary-950: #ecf1f8;
+
+    --accent-50: #1a0c00;
+    --accent-100: #331800;
+    --accent-200: #663000;
+    --accent-300: #994700;
+    --accent-400: #cc5f00;
+    --accent-500: #ff7700;
+    --accent-600: #ff9233;
+    --accent-700: #ffad66;
+    --accent-800: #ffc999;
+    --accent-900: #ffe4cc;
+    --accent-950: #fff1e5;
+
   }
 }
 

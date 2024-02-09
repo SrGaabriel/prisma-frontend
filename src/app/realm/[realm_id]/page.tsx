@@ -1,7 +1,7 @@
 import styles from './page.module.css';
 
 const Page = ({params}: { params: { realm_id: number } }) => {
-    const currentDay = new Date();
+    const currentDay = new Date(2024, 0,);
     const currentMonthName = currentDay.toLocaleString('en-US', { month: 'long' });
     const currentYear = currentDay.getFullYear();
 
@@ -49,6 +49,11 @@ function createMonthWeekDayColumn(currentDay: Date, weekDay: number) {
         if (day === currentDay.getDate()) {
             return `${styles.weekDayNumber} ${styles.dayToday}`
         }
+        const firstDayOfCurrentWeek = currentDay.getDate() - currentDay.getDay();
+        if (day >= firstDayOfCurrentWeek+1 && day <= firstDayOfCurrentWeek + 7) {
+            return `${styles.weekDayNumber} ${styles.dayThisWeek}`
+        }
+        
         return styles.weekDayNumber;
     }
 

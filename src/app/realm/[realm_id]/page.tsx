@@ -11,7 +11,7 @@ const Page = ({params}: { params: { realm_id: number } }) => {
 
     return (
         <div className={styles.page}>
-            <div className={styles.content}>
+            <div className={styles.sidebar}>
                 <div className={styles.month}>
                     <span className={styles.monthName}>{currentMonthName} {currentYear}</span>
                     <div className={styles.monthCalendarSection}>

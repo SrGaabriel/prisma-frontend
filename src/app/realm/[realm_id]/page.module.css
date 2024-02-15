@@ -3,13 +3,12 @@
     height: 100vh;
     background-color: white;    
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.content {
-    width: 1300px;
-    height: 85%;
+.sidebar {
+    width: 500px;
+    height: 100%;
+    border-right: 1px ;
 }
 
 .month {
@@ -17,7 +16,6 @@
     flex-direction: column;
     width: 350px;
     height: 350px;
-    background-color: #f7f5fce1;
     border-radius: 10px;
     padding: 32px;
 }

@@ -68,11 +68,10 @@
 
 .dayDisabled {
     color: gray;
-    cursor: default;
 }
 
 .dayDisabled:hover {
-    background-color: transparent;
+    background-color: rgb(238, 238, 238);
 }
 
 .dayToday {
@@ -85,5 +84,9 @@
 }
 
 .dayThisWeek {
-    background-color: red;
+    background-color: var(--primary-100);
+}
+
+.dayThisWeek:hover {
+    background-color: var(--primary-200);
 }

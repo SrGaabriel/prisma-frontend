@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import styles from './page.module.css';
 import { isDayOnTheSameWeekAsDate } from '@/app/utils/Calendar';
+import Calendar from './calendar/Calendar';
 
 const Page = ({params}: { params: { realm_id: number } }) => {
     const [currentDay, setCurrentDay] = useState(new Date());
@@ -11,19 +12,24 @@ const Page = ({params}: { params: { realm_id: number } }) => {
 
     return (
         <div className={styles.page}>
-            <div className={styles.sidebar}>
-                <div className={styles.month}>
-                    <span className={styles.monthName}>{currentMonthName} {currentYear}</span>
-                    <div className={styles.monthCalendarSection}>
-                        {createMonthWeekDayColumn(1)}
-                        {createMonthWeekDayColumn(2)}
-                        {createMonthWeekDayColumn(3)}
-                        {createMonthWeekDayColumn(4)}
-                        {createMonthWeekDayColumn(5)}
-                        {createMonthWeekDayColumn(6)}
-                        {createMonthWeekDayColumn(7)}
+            <div className={styles.header}>
+            </div>
+            <div className={styles.content}>
+                <div className={styles.sidebar}>
+                    <div className={styles.month}>
+                        <span className={styles.monthName}>{currentMonthName} {currentYear}</span>
+                        <div className={styles.monthCalendarSection}>
+                            {createMonthWeekDayColumn(1)}
+                            {createMonthWeekDayColumn(2)}
+                            {createMonthWeekDayColumn(3)}
+                            {createMonthWeekDayColumn(4)}
+                            {createMonthWeekDayColumn(5)}
+                            {createMonthWeekDayColumn(6)}
+                            {createMonthWeekDayColumn(7)}
+                        </div>
                     </div>
                 </div>
+                <Calendar/>
             </div>
         </div>
     );
